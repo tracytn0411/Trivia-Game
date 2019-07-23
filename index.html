@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reboot.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Trivia Game</title>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Science Trivia Game</h1>
+        </header>
+        <section id="timedisplay">
+            <h3>Time remaining:</h3>
+        </section>
+        <section id="quizarea">
+            <article id="question1">
+                <h4>What is the heaviest organ in the human body?</h4>
+                <div class="custom-control custom-radio">
+                    <input type="radio" name="organ" id="organ_liver" class="custom-control-input" value="20">
+                    <label for="organ_liver" class="custom-control-label">Liver</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" name="organ" id="organ_heart" class="custom-control-input" value="0">
+                    <label for="organ_heart" class="custom-control-label">Heart</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" name="organ" id="organ_brain" class="custom-control-input" value="0">
+                    <label for="organ_brain" class="custom-control-label">Brain</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" name="organ" id="organ_kidney" class="custom-control-input" value="0">
+                    <label for="organ_kidney" class="custom-control-label">Kidney</label>
+                </div>
+            </article>
+            <article id="question2">
+                <h4>Homichlophobia is the fear of what?</h4>
+                <div class="custom-control custom-radio">
+                    <input type="radio" name="phobia" id="phobia_height" class="custom-control-input" value="0">
+                    <label for="phobia_height" class="custom-control-label">Height</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" name="phobia" id="phobia_fog" class="custom-control-input" value="20">
+                    <label for="phobia_fog" class="custom-control-label">Fog</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" name="phobia" id="phobia_bugs" class="custom-control-input" value="0">
+                    <label for="phobia_bugs" class="custom-control-label">Bugs</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" name="phobia" id="phobia_hiking" class="custom-control-input" value="0">
+                    <label for="phobia_hiking" class="custom-control-label">Hiking</label>
+                </div>
+            </article>
+            <article id="question3">
+                <h4>Which soft drink was invented by a pharmacist?</h4>
+                <div class="custom-control custom-radio">
+                    <input type="radio" name="softDrink" id="softDrink_pepsi" class="custom-control-input" value="0">
+                    <label for="softDrink_pepsi" class="custom-control-label">Pepsi</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" name="softDrink" id="softDrink_pepper" class="custom-control-input" value="0">
+                    <label for="softDrink_pepper" class="custom-control-label">Dr.Pepper</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" name="softDrink" id="softDrink_coke" class="custom-control-input" value="0">
+                    <label for="softDrink_coke" class="custom-control-label">Coca-cola</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" name="softDrink" id="softDrink_All" class="custom-control-input" value="20">
+                    <label for="softDrink_All" class="custom-control-label">All of the above</label>
+                </div>
+            </article>
+        </section>
+        <section id="resultArea">
+            <button class="btn" type="submit" id="submitButton">Submit</button>
+            <article id="result"></article>
+        </section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
