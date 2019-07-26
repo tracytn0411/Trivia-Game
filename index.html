@@ -14,73 +14,101 @@
         <header>
             <h1>Science Trivia Game</h1>
         </header>
-        <section id="timedisplay">
-            <h3>Time remaining:</h3>
-        </section>
-        <section id="quizarea">
-            <article id="question1">
-                <h4>What is the heaviest organ in the human body?</h4>
-                <div class="custom-control custom-radio">
-                    <input type="radio" name="organ" id="organ_liver" class="custom-control-input" value="20">
-                    <label for="organ_liver" class="custom-control-label">Liver</label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input type="radio" name="organ" id="organ_heart" class="custom-control-input" value="0">
-                    <label for="organ_heart" class="custom-control-label">Heart</label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input type="radio" name="organ" id="organ_brain" class="custom-control-input" value="0">
-                    <label for="organ_brain" class="custom-control-label">Brain</label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input type="radio" name="organ" id="organ_kidney" class="custom-control-input" value="0">
-                    <label for="organ_kidney" class="custom-control-label">Kidney</label>
-                </div>
-            </article>
-            <article id="question2">
-                <h4>Homichlophobia is the fear of what?</h4>
-                <div class="custom-control custom-radio">
-                    <input type="radio" name="phobia" id="phobia_height" class="custom-control-input" value="0">
-                    <label for="phobia_height" class="custom-control-label">Height</label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input type="radio" name="phobia" id="phobia_fog" class="custom-control-input" value="20">
-                    <label for="phobia_fog" class="custom-control-label">Fog</label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input type="radio" name="phobia" id="phobia_bugs" class="custom-control-input" value="0">
-                    <label for="phobia_bugs" class="custom-control-label">Bugs</label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input type="radio" name="phobia" id="phobia_hiking" class="custom-control-input" value="0">
-                    <label for="phobia_hiking" class="custom-control-label">Hiking</label>
-                </div>
-            </article>
-            <article id="question3">
-                <h4>Which soft drink was invented by a pharmacist?</h4>
-                <div class="custom-control custom-radio">
-                    <input type="radio" name="softDrink" id="softDrink_pepsi" class="custom-control-input" value="0">
-                    <label for="softDrink_pepsi" class="custom-control-label">Pepsi</label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input type="radio" name="softDrink" id="softDrink_pepper" class="custom-control-input" value="0">
-                    <label for="softDrink_pepper" class="custom-control-label">Dr.Pepper</label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input type="radio" name="softDrink" id="softDrink_coke" class="custom-control-input" value="0">
-                    <label for="softDrink_coke" class="custom-control-label">Coca-cola</label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input type="radio" name="softDrink" id="softDrink_All" class="custom-control-input" value="20">
-                    <label for="softDrink_All" class="custom-control-label">All of the above</label>
-                </div>
-            </article>
-        </section>
-        <section id="resultArea">
-            <button class="btn" type="submit" id="submitButton">Submit</button>
-            <article id="result"></article>
-        </section>
+        <div id="start">
+                <button class="btn btn-secondary startGame">PLAY</button>
+        </div>
 
+        <div id="wrapper">
+            <section id="quizArea">
+                <article id="timeDisplay"></article>
+                <article id="questionsArea">
+                    <article id="question1">
+                        <h4>What is the heaviest organ in the human body?</h4>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" name="organ" id="organ_liver" class="custom-control-input" value="25">
+                            <label for="organ_liver" class="custom-control-label">Liver</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" name="organ" id="organ_heart" class="custom-control-input" value="0">
+                            <label for="organ_heart" class="custom-control-label">Heart</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" name="organ" id="organ_brain" class="custom-control-input" value="0">
+                            <label for="organ_brain" class="custom-control-label">Brain</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" name="organ" id="organ_kidney" class="custom-control-input" value="0">
+                            <label for="organ_kidney" class="custom-control-label">Kidney</label>
+                        </div>
+                    </article>
+                    <article id="question2">
+                        <h4>Homichlophobia is the fear of what?</h4>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" name="phobia" id="phobia_height" class="custom-control-input" value="0">
+                            <label for="phobia_height" class="custom-control-label">Height</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" name="phobia" id="phobia_fog" class="custom-control-input" value="25">
+                            <label for="phobia_fog" class="custom-control-label">Fog</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" name="phobia" id="phobia_bugs" class="custom-control-input" value="0">
+                            <label for="phobia_bugs" class="custom-control-label">Bugs</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" name="phobia" id="phobia_hiking" class="custom-control-input" value="0">
+                            <label for="phobia_hiking" class="custom-control-label">Hiking</label>
+                        </div>
+                    </article>
+                    <article id="question3">
+                        <h4>Which soft drink was invented by a pharmacist?</h4>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" name="softDrink" id="softDrink_pepsi" class="custom-control-input" value="0">
+                            <label for="softDrink_pepsi" class="custom-control-label">Pepsi</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" name="softDrink" id="softDrink_pepper" class="custom-control-input" value="0">
+                            <label for="softDrink_pepper" class="custom-control-label">Dr.Pepper</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" name="softDrink" id="softDrink_coke" class="custom-control-input" value="0">
+                            <label for="softDrink_coke" class="custom-control-label">Coca-cola</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" name="softDrink" id="softDrink_All" class="custom-control-input" value="25">
+                            <label for="softDrink_All" class="custom-control-label">All of the above</label>
+                        </div>
+                    </article>
+                    <article id="question4">
+                        <h4>40% of Americans have never visited what?</h4>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" name="americans" id="americans_doctor" class="custom-control-input" value="0">
+                            <label for="americans_doctor" class="custom-control-label">A primary doctor</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" name="americans" id="americans_dentist" class="custom-control-input" value="25">
+                            <label for="americans_dentist" class="custom-control-label">A dentist</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" name="americans" id="americans_dermatologist" class="custom-control-input" value="0">
+                            <label for="americans_dermatologist" class="custom-control-label">A dermatologist</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" name="americans" id="americans_ophth" class="custom-control-input" value="0">
+                            <label for="americans_ophth" class="custom-control-label">All of the above</label>
+                        </div>
+                    </article>
+                </article>
+                <button class="btn" type="submit" id="submitButton">Submit</button>
+            </section>
+            <section id="resultArea">
+                <h2 id="result"></h2>
+                <h3 id="comment"></h3>
+            </section>
+            <section id="playAgain">
+                <h5> Click below to play again !</h5>
+            </section>
+        </div> 
     </main>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
