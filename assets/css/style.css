@@ -1,5 +1,32 @@
+body {
+    background-image: url(../images/Science\ BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+}
 
 #quizArea, #resultArea, #playAgain {
     display: none;
+}
+
+h3, h4, h5 {
+    margin: 1rem 0 0;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+header, #start, #submit {
+    padding-top: 2rem;
+}
+
+header {
+    font-family: fantasy;
+    font-weight: bolder;
+    color: rgb(67, 144, 158);
 }
 

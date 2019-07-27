@@ -11,6 +11,8 @@ $(".startGame").on("click", function () {
     startGame();
     $("#playAgain").hide();
     $("#resultArea").hide();
+    //Clear all checked button
+    $("input[type=radio]").prop("checked",false);
 })
 
 function startGame(){
@@ -43,7 +45,6 @@ function playGame() {
     
     $("#submitButton").on("click", function () {
         
-
         if ($("input[type = 'radio']:checked").length < 4) {
             alert("Please pick an answer for each question!")
         } else {
